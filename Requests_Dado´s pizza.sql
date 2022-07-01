@@ -9,7 +9,7 @@ INNER JOIN operations ON orders.id=operations.id_order
 INNER JOIN waiters ON orders.waiter=waiters.id_w
 INNER JOIN cooks ON orders.cook=cooks.id_c
 INNER JOIN pizzas ON operations.id_pizza=pizzas.id;
-Request 2.jpg
+
 SELECT pizzas.name AS "Pizza Flavor",  ingredients.id AS "ID Ingredient",ingredients.name AS Ingredient,
 expend.amount_i AS Quantity,supplier.id AS "ID Supplier", supplier.name AS Store, supplier.price_per_gram AS Price
 FROM expend
